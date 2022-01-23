@@ -31,7 +31,6 @@ function Video({data, onChangeHandle}) {
 			<p>{data.views} Views | Uploaded {data.createdAt}</p>
 			<button onClick={upVote}>{data.upvotes}👍</button>
 			<button onClick={downVote}>{data.downvotes}👎</button>
-			<hr />
 			<CommentList comments={data.comments}/>
 		</>
 	);
